@@ -1,0 +1,62 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    background-image: url(img/bg_img.svg);
+    background-repeat : no-repeat;
+    background-size : cover;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}
+.con {
+    width: 600px;
+    height: 400px;
+    background-color: rgba(178, 178, 178, 0.8);
+    border-radius: 2%;
+}
+#SI {
+    margin-top: 100px;
+    padding: 50px;
+}
+hr {
+    width: 300px;
+    border-top: 2px solid rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+input {
+    width: 200px;
+    height: 40px;
+    background-color: rgba(197, 197, 197, 0.01);
+}
+#id {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+#pw {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+#btn {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin: 20px;
+}
+a {
+    text-decoration-line: none;
+    color: black;
+}
+a:active {
+    color: rgb(255, 255, 255);
+}
