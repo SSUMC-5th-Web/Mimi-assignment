@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { movies } from "./movieDummy";
+import Movie from "./Components/Movie";
+import { AppContainer } from "./Components/Movie.style";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AppContainer>
+        {
+          movies.results.map((item) => {
+            // props로 데이터 넘겨주기
+            return (
+              <Movie
+              title={item.title} 
+              vote_average={item.vote_average} 
+              poster_path={item.poster_path} 
+              overview={item.overview}/>
+            )
+          })
+        }
+      </AppContainer>
     </div>
   );
 }
 
 export default App;
+
+
+
