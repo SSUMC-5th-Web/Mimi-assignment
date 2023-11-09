@@ -5,6 +5,7 @@ import Movies from "./pages/Movies"
 import NotFound from "./pages/NotFound";
 import TV from "./pages/TV";
 import Header from "./Components/Header";
+import MovieDetail from "./pages/MovieDetail";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path="/movie" element={<Movies/>} />
           <Route path="/*" element={<NotFound/>} />
           <Route path="/tv" element={<TV/>} />
+
+          <Route path="/movie/:id" element={<MovieDetail/>} />
         </Routes>
       </BrowserRouter>
     </div>
