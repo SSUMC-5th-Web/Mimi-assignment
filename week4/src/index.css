@@ -1,8 +1,8 @@
-/* body {
+body {
   background-color: rgb(255, 237, 245);
   padding-left: 70px;
   padding-right: 70px;
-} */
+}
 
 /* .app-container {
   display: grid;
@@ -28,9 +28,9 @@
   justify-content: space-between;
 } */
 
-#title {
+/* #title {
   font-weight: bold;
-}
+} */
 
 /* #overview {
   display: none;
@@ -44,9 +44,9 @@
   height: 316px;
 } */
 
-/* .movie-container:hover #overview {
+.movie-container:hover #overview {
   display: block;
-} */
+}
 
 #overview_title {
   font-weight: bold;

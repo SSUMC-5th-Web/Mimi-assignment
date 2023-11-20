@@ -114,3 +114,11 @@
   font-weight: bold;
   color: rgb(255, 95, 55);
 }
+
+/* login control */
+.loginControl {
+  display: flex;
+}
+.loginBtn {
+  border-radius: 15px;
+}

@@ -5,6 +5,7 @@ import { AppContainer } from "./Components/Movie.style";
 function App() {
   return (
     <div>
+      {/* <GlobalStyles/> */}
       <AppContainer>
         {
           movies.results.map((item) => {

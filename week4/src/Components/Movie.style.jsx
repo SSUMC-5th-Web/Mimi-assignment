@@ -1,13 +1,4 @@
 import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
-
-export const GlobalStyles = createGlobalStyle`
-    body {
-        background-color: rgb(255, 237, 245);
-        padding-left: 70px;
-        padding-right: 70px;
-    }
-`;
 
 export const AppContainer = styled.div`
     display: grid;
@@ -15,13 +6,10 @@ export const AppContainer = styled.div`
 `;
 
 export const MovieContainer = styled.div`
-    min-width: 200px;
-    background-color: rgb(255, 142, 193);
-    margin: 10px;
-    position: relative;
-    ${MovieOverview}:hover & {
-        display: block;
-    }
+min-width: 200px;
+background-color: rgb(255, 142, 193);
+margin: 10px;
+position: relative;
 `;
 
 export const MoviePoster = styled.img`
@@ -34,6 +22,10 @@ export const MovieInfo = styled.div`
     padding: 10px;
     display: flex;
     justify-content: space-between;    
+`;
+
+export const MovieTitle = styled.span`
+    font-weight: bold;   
 `;
 
 export const MovieOverview = styled.div`
