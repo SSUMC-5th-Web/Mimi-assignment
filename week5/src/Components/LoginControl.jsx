@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function LoginControl() {
@@ -9,9 +9,11 @@ export default function LoginControl() {
     setIsLoggedIn(!isLoggedIn);
   };
 
-  if (!isLoggedIn) {
-    navigate('/login');
-  }
+  useEffect(() => {
+    if (!isLoggedIn) {
+      navigate('/login');
+    }
+  }, [isLoggedIn, navigate]);
 
   return (
     <div className='logInControl'>
